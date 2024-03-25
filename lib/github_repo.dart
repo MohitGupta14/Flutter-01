@@ -14,6 +14,7 @@ class GitHubRepos extends StatefulWidget {
 class _GitHubReposState extends State<GitHubRepos> {
   List<dynamic> repos = [];
   Map<String, dynamic> lastCommits = {};
+static const token = 'YOUR_GITHUB_TOKEN_HERE';
 
   @override
   void initState() {
@@ -22,7 +23,6 @@ class _GitHubReposState extends State<GitHubRepos> {
   }
 
   Future<void> fetchRepos() async {
-    const token = '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';
     final response = await http.get(
       Uri.parse('https://api.github.com/users/freeCodeCamp/repos'),
       headers: {'Authorization': 'token $token'},
@@ -41,7 +41,6 @@ Map<String, dynamic>? authorDetail; // Declare authorDetail in the broader scope
   Future<void> fetchLastCommits() async {
     for (var repo in repos) {
       final repoName = repo['name'];
-      const token = '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';
       final response = await http.get(Uri.parse('https://api.github.com/repos/freeCodeCamp/$repoName/commits'),
       headers: {'Authorization': 'token $token'});
       if (response.statusCode == 200) {
