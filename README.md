@@ -32,8 +32,8 @@ This Flutter project displays a list of GitHub repositories owned by FreeCodeCam
     ```
      **Output:**
      
-          <img src="https://github.com/MohitGupta14/Flutter-01/assets/81846020/2b14c81e-f61e-4ee1-bdc9-7413c30b8361" alt="Image 1" width="180" height="350">
-          <img src="https://github.com/MohitGupta14/Flutter-01/assets/81846020/78822dc5-0462-49c1-97bd-436960a22aa5" alt="Image 2" width="180" height="350">
-
-
+        <div style="display: flex; justify-content: center;">
+    <img src="https://github.com/MohitGupta14/Flutter-01/assets/81846020/2b14c81e-f61e-4ee1-bdc9-7413c30b8361" alt="Image 1" width="180" height="350">
+    <img src="https://github.com/MohitGupta14/Flutter-01/assets/81846020/78822dc5-0462-49c1-97bd-436960a22aa5" alt="Image 2" width="180" height="350">
+</div>
 
